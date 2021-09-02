@@ -1,5 +1,5 @@
 # Youtube Downloader
-I was trying to improve myself in any software area and I've decided to do an app that I can use it.
+I was trying to improve myself and I've decided to do an app that I can use it daily.
 I've found this idea from [here](https://www.geeksforgeeks.org/project-idea-automatic-youtube-playlist-downloader/)
 but I used Python. 
 
@@ -16,6 +16,12 @@ Open desktop and watch it!
 ![3](https://user-images.githubusercontent.com/58422765/112445825-9a4c4a80-8d60-11eb-9a2b-190e29beaa96.PNG)
 
 
-### Resources
+## Setup 
+### Project Clone
+```
+git clone https://github.com/ozgecinko/YoutubeDownloader.git
+```
+
+### References
 * https://www.python-course.eu/tkinter_labels.php
 * https://youtu.be/NBzxYvU6H94
