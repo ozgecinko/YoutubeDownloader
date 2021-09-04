@@ -17,7 +17,7 @@ Open desktop and watch it!
 
 
 ## Setup 
-### Project Clone
+### Installation
 ```
 git clone https://github.com/ozgecinko/YoutubeDownloader.git
 ```
