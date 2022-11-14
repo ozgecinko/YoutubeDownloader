@@ -1,10 +1,10 @@
 # Download a youtube video into desktop
 
-from pytube import YouTube
 import tkinter as tk
+from pytube import YouTube
 
 window = tk.Tk()
-window.geometry("{}x{}".format(350, 200))
+window.geometry("{}x{}".format(500, 200))
 window.configure(bg="#c39191")
 window.title("Youtube Downloader")
 
@@ -28,7 +28,7 @@ def downloader():
     link = link_entry.get()
     name = name_entry.get()
     # it'll downloaded given path
-    path = r"C:\Users\ozgec\Desktop"
+    path = r"/Users/ozgecinko/Desktop"
     extension = "mp4"
     yt = YouTube(link)
     yt_stream = yt.streams.filter(progressive=True, file_extension=extension).order_by('resolution').desc().first()
