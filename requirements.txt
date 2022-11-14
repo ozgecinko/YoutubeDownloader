@@ -1,1 +1,3 @@
+certifi==2022.9.24
+mttkinter==0.6.1
 pytube==12.1.0
