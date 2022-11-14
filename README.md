@@ -20,8 +20,6 @@ Open desktop and watch it!
 ### Installation
 ```
 git clone https://github.com/ozgecinko/YoutubeDownloader.git
-```
-```
 python3 -m venv .env
 source .env/bin/activate
 pip install -r requirements.txt
