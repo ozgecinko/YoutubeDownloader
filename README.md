@@ -1,32 +1,47 @@
-# Youtube Downloader
-I was trying to improve myself and I've decided to do an app that I can use it daily.
-I've found this idea from [here](https://www.geeksforgeeks.org/project-idea-automatic-youtube-playlist-downloader/)
-but I used Python. 
+# YouTube Pro Downloader v2.0
+A modern, fast, and cross-platform YouTube downloader built with **Python 3.13**, **Streamlit**, and **yt-dlp**. Download your favorite content as high-quality MP3 or QuickTime-compatible MP4 files.
 
-First, paste youtube link below download link label and give video a name.
+![Demo](demo.gif)
 
-![1](https://user-images.githubusercontent.com/58422765/112445750-89033e00-8d60-11eb-9e18-6b751b95ac6c.PNG)
+## Evolution: From v1.0 to v2.0
+This project has been completely modernized to overcome the limitations of the previous version.
 
-Then, click **"Download"** button.
+- **Engine**: Switched from `pytube` to `yt-dlp` because `pytube` is no longer reliable against YouTube’s frequent API updates, whereas `yt-dlp` offers superior stability and speed.
+- **Interface**: Replaced the `Tkinter` with `Streamlit`, providing a responsive, and web-ready user experience.
+- **Infrastructure**: Updated to **Python 3.13** and implemented **uv** for faster, deterministic dependency management.
 
-![2](https://user-images.githubusercontent.com/58422765/112445796-93253c80-8d60-11eb-85f5-9cc89b9084e1.PNG)
-
-Open desktop and watch it!
-
-![3](https://user-images.githubusercontent.com/58422765/112445825-9a4c4a80-8d60-11eb-9a2b-190e29beaa96.PNG)
-
-
-## Setup 
-### Installation
-```
-git clone https://github.com/ozgecinko/YoutubeDownloader.git
-python3 -m venv .env
-source .env/bin/activate
-pip install -r requirements.txt
-python YoutubeDownloader.py
-```
+## v2.0 Features
+- **MP3 Download:** High-quality 192kbps audio extraction.
+- **MP4 Download:** H.264 video support.
+- **Modern UI:** Clean and easy-to-use interface via Streamlit.
+- **Cross-Platform:** Works seamlessly on macOS, Windows, and Linux.
 
 
-### References
-* https://www.python-course.eu/tkinter_labels.php
-* https://youtu.be/NBzxYvU6H94
+
+## Getting Started
+
+### 1. Prerequisites
+First, ensure you have **FFmpeg** installed on your system (required for media processing):
+- **macOS:** `brew install ffmpeg`
+- **Windows:** Download from [ffmpeg.org](https://ffmpeg.org/download.html)
+- **Linux:** `sudo apt install ffmpeg`
+
+### 2. Setup with `uv` (Recommended)
+This project uses **uv** for lightning-fast dependency management.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ozgecinko/YoutubeDownloader.git
+   cd YoutubeDownloader
+   ```
+2. **Install dependencies**
+   ```bash
+    uv sync
+   ```
+3. **Run the application**
+   ```bash
+    uv run streamlit run app.py
+   ```
+
+## License
+This project is for educational purposes only. 
+Please respect YouTube's Terms of Service.
